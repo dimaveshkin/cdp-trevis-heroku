@@ -5,5 +5,4 @@ require('bootstrap');
 
 $('#btn-hello-world').click(function () {
     console.log(resrever('Hello, world!'));
-    console.log(resrever('Hello, world! 2'));
 });
