@@ -9,19 +9,19 @@
         "no-console": 0,
         "no-undef": 0,
         "indent": [
-            "error",
+            "warn",
             4
         ],
         "linebreak-style": [
-            "warning",
+            "warn",
             "windows"
         ],
         "quotes": [
-            "error",
+            "warn",
             "single"
         ],
         "semi": [
-            "error",
+            "warn",
             "always"
         ]
     }
