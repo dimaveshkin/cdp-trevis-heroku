@@ -7,9 +7,8 @@
     "build:prod": "gulp build --env=production",
     "watch": "gulp watch",
     "test": "echo \"No test specified\" && exit 0",
-    "start": "npm i && npm run build:prod && npm run server",
+    "start": "http-server build -p ${PORT}",
     "start-local": "npm i && npm run build:prod && npm run server-local",
-    "server": "http-server build -p ${PORT}",
     "server-local": "http-server build -p 3000"
   },
   "repository": {
