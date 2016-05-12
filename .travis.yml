@@ -3,8 +3,7 @@ node_js:
   - "6"
   - "5"
 branches:
-  only:
-    - deploy
+  only: deploy
 install:
   - npm install
   - bower install
@@ -12,6 +11,7 @@ sctipt: npm run build:prod
 deploy:
   skip_cleanup: true
   provider: heroku
+  on: deploy
   api_key:
     secure: "dz6vK9G4wR+F70n9NaroA7OfbTbJYYuJ2ndnHU5k9s9hEjJYzo4omyMphQdqGXZ4OPLVE0My/6MDCY4y+6SO5N0QKEipTlMxBIYf3r6dS+k/FUfJIpN52y9xz9wgiNJpxerL44hX688EZkieZp0fd/CuK+hfpWm9Mam3MKHMPT85hFGM9Ztlq0tgbb9f66A0KnPwjKwwLkQMO271+itO+TxM0UYfd7oUMmVNHHr0zX0Krd8Esxu/mgk3tezMjhFPHSPqFUiRjZowdgpsQP4gZo7/a9NTuhZRCOovz1fzY/If1ptos+3i28unJn09gufJu/ptJkGPJDc9U0LO4LD1uCjhG+pbmOe3bcuQwTv/x3lMjlllmHYDMR1n6+M5XnDwqP6HykayZyvxpcQZ0VIQlm9f9BjABbNjVuSdrDHtktNogxen9f/BHFpTiCsNHLBQsNBaPck9pMBdspGzh5K3cdEd+BUUSCLqOhz5BZFYsX2Oy2tAruukXBsD/JqBC0QXao1QJ3S+mJmbkYNp+IooItTD44dDxQhY3ztMpcIGMfmwakf8vZor3d3jwafieRkPJ3LpBjm0fPvyZA3vgo+ctaz8C9TyuKiHrIrDA3VaCRsjWi5jLmZ3GK6HbmEIIWX2gV975ZS1Mq3Jh/bp+CKUlNaWqIFDtXxCn2fRGkFHS/c="
   app: cdp-veshkin
