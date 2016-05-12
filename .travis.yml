@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "6"
+  - "5"
+branches:
+  only:
+    - deploy
+install:
+  - npm install
+  - bower install
+sctipt:
+  - npm run build:prod
+#deploy:
+#	skip_cleanup: true
+#	provider: heroku
+#	api_key:
+#      secure: "YOUR ENCRYPTED API KEY"
+#    app: cdp-veshkin
