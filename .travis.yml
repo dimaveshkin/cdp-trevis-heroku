@@ -8,8 +8,7 @@ branches:
 install:
   - npm install
   - bower install
-sctipt:
-  - npm run build:prod
+sctipt: npm run build:prod
 deploy:
 	skip_cleanup: true
 	provider: heroku
