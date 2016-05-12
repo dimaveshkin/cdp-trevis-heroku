@@ -3,7 +3,7 @@ node_js:
   - "6"
   - "5"
 branches:
-  only: deploy
+  only: master
 install:
   - npm install
   - bower install
